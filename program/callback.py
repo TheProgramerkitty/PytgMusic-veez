@@ -28,26 +28,26 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "💕 Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ 💕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("Cᴏᴍᴍᴀɴᴅs 📚", callback_data="cbcmds"),
+                    
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "❤️ 𝕭𝖔𝖙 𝕾𝖚𝖕𝖕𝖔𝖗𝖙", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "𝕭𝖔𝖙 𝖀𝖕𝖉𝖆𝖙𝖊𝖘 💙", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "Dᴇᴠʟᴏᴘᴇʀ 👨‍💻", url="https://t.me/AttitudefuckerXD"
                     )
                 ],
             ]
