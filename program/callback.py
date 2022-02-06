@@ -60,17 +60,17 @@ async def cbstart(_, query: CallbackQuery):
 async def cbguides(_, query: CallbackQuery):
     await query.answer("user guide")
     await query.edit_message_text(
-        f"""❓ How to use this Bot ?, read the Guide below !
+        f"""ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍᴇ ? 
 
-1.) First, add this bot to your Group.
-2.) Then, promote this bot as administrator on the Group also give all permissions except Anonymous admin.
-3.) After promoting this bot, type /reload in Group to update the admin data.
-3.) Invite @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her (unfortunately the userbot will joined by itself when you type `/play (song name)` or `/vplay (song name)`).
-4.) Turn on/Start the video chat first before start to play video/music.
+👨‍💻 Mʏ Mᴀsᴛᴇʀ: [𝗔𝖙𝖙𝖎𝖙𝖚𝖉𝖊 𝗸𝖎𝖓𝖌](https://t.me/Attitude_king_vj)
+👾 Bᴏᴛ Vᴇʀsɪᴏɴ: `v0.6.2`\n🔥 Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ: `1.4.1`
+🐍 Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ: `3.10.2`
+✨ Pʏᴛɢᴄᴀʟʟs Vᴇʀsɪᴏɴ: `0.8.5`
+🆙 Uᴘᴛɪᴍᴇ Sᴛᴀᴛᴜs: `{uptime}`
 
-`- END, EVERYTHING HAS BEEN SETUP -`
+ᴄʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs!
 
-📌 If the userbot not joined to video chat, make sure if the video chat already turned on and the userbot in the chat.
+ɪɴᴠɪᴛᴇ @{ASSISTANT_NAME} ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴏʀ ᴛʏᴘᴇ /ᴜsᴇʀʙᴏᴛᴊᴏɪɴ ᴛᴏ ɪɴᴠɪᴛᴇ ʜᴇʀ (ᴜɴꜰᴏʀᴛᴜɴᴀᴛᴇʟʏ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ᴡɪʟʟ ᴊᴏɪɴᴇᴅ ʙʏ ɪᴛsᴇʟꜰ ᴡʜᴇɴ ʏᴏᴜ ᴛʏᴘᴇ /ᴘʟᴀʏ (sᴏɴɢ ɴᴀᴍᴇ) ᴏʀ /ᴠᴘʟᴀʏ (sᴏɴɢ ɴᴀᴍᴇ)).
 
 💡 If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}.""",
         reply_markup=InlineKeyboardMarkup(
