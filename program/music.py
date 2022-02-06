@@ -140,7 +140,7 @@ async def play(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) | `music`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) \n🎸 Stream type: `music`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                 )
             else:
                 try:
@@ -150,7 +150,7 @@ async def play(c: Client, m: Message):
                     userid = m.from_user.id
                     thumbnail = f"{IMG_5}"
                     image = await thumb(thumbnail, title, userid, ctitle)
-                    await suhu.edit("🔄 **Joining vc...**")
+                    await suhu.edit("🔄 **Joining vc\n PyTgMusic ⚡...**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
@@ -168,7 +168,7 @@ async def play(c: Client, m: Message):
                     await m.reply_photo(
                         photo=image,
                         reply_markup=InlineKeyboardMarkup(buttons),
-                        caption=f"🗂 **Name:** [{songname}]({link}) | `music`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
+                        caption=f"🗂 **Name:** [{songname}]({link}) \n🎸 Stream type: `music`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
                     )
                 except Exception as e:
                     await suhu.delete()
@@ -176,10 +176,10 @@ async def play(c: Client, m: Message):
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "» reply to an **audio file** or **give something to search.**"
+                    "» reply to an **audio file** or **give something to search.\n\n Example: `/play kanave kanave`**"
                 )
             else:
-                suhu = await c.send_message(chat_id, "🔍 **Searching...**")
+                suhu = await c.send_message(chat_id, "**PyTgMusic Searching🔎...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
@@ -208,7 +208,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) \n🎸 Stream type: `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                         else:
                             try:
@@ -230,7 +230,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"🗂 **Name:** [{songname}]({url}) \n🎸 Stream type: `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                                 )
                             except Exception as ep:
                                 await suhu.delete()
@@ -239,7 +239,7 @@ async def play(c: Client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "» reply to an **audio file** or **give something to search.**"
+                "» reply to an **audio file** or **give something to search.\n\n Example `/play kanave kanave`**"
             )
         else:
             suhu = await c.send_message(chat_id, "🔍 **Searching...**")
@@ -269,11 +269,11 @@ async def play(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) \n🎸 Stream type: `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                         )
                     else:
                         try:
-                            await suhu.edit("🔄 **Joining vc...**")
+                            await suhu.edit("🔄 **Joining vc\n PyTgMusic ⚡...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
@@ -289,7 +289,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"🗂 **Name:** [{songname}]({url}) \n🎸 Stream type: `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                         except Exception as ep:
                             await suhu.delete()
