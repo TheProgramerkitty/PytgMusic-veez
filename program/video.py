@@ -161,7 +161,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) \n 🎸 Stream type: `video`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) \n 🎸 **Stream type:** `video`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                 )
             else:
                 gcname = m.chat.title
@@ -193,7 +193,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"🗂 **Name:** [{songname}]({link}) \n🎸 Stream type: `video`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                    caption=f"🗂 **Name:** [{songname}]({link}) \n🎸 **Stream type:** `video`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                 )
         else:
             if len(m.command) < 2:
@@ -232,7 +232,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) \n🎸 Stream type: `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) \n🎸 **Stream type:** `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                         else:
                             try:
@@ -253,7 +253,7 @@ async def vplay(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) \n🎸 Stream type `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"🗂 **Name:** [{songname}]({url}) \n🎸 **Stream type:** `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                                 )
                             except Exception as ep:
                                 await loser.delete()
@@ -317,7 +317,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) \n🎸 Stream Type: `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"🗂 **Name:** [{songname}]({url}) \n🎸 **Stream Type:** `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                         except Exception as ep:
                             await loser.delete()
