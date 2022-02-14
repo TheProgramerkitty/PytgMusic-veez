@@ -150,7 +150,7 @@ async def play(c: Client, m: Message):
                     userid = m.from_user.id
                     thumbnail = f"{IMG_5}"
                     image = await thumb(thumbnail, title, userid, ctitle)
-                    await suhu.edit("**PyTgMusic Downloader**\n\n**Title**: {songname}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
+                    await suhu.edit("**PyTgMusic Downloader**\n\n**Downloading Ur Request**\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
@@ -212,7 +212,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("**PyTgMusic Downloader**\n\n**Title**: {title[:22]}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
+                                await suhu.edit("**PyTgMusic Downloader**\n\n**Downloading Ur request**\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -242,7 +242,7 @@ async def play(c: Client, m: Message):
                 "» reply to an **audio file** or **give something to search.\n\n Example `/play kanave kanave`**"
             )
         else:
-            suhu = await c.send_message(chat_id, "**PyTgMusic Downloader**\n\n**Title**: {songname}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**")
+            suhu = await c.send_message(chat_id, "**PyTgMusic Downloader**\n\n**Downloading Ur Request**\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -273,7 +273,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("**PyTgMusic Downloader**\n\n**Title**: {songname}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
+                            await suhu.edit("**PyTgMusic Downloader**\n\n**Downloading Ur Request**\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
