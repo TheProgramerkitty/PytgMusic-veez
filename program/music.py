@@ -150,7 +150,7 @@ async def play(c: Client, m: Message):
                     userid = m.from_user.id
                     thumbnail = f"{IMG_5}"
                     image = await thumb(thumbnail, title, userid, ctitle)
-                    await suhu.edit("🔄 **Joining vc\n PyTgMusic ⚡...**")
+                    await suhu.edit("**PyTgMusic Downloader**\n\n**Title**: {songname}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
